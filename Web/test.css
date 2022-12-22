@@ -1,0 +1,240 @@
+
+
+/*reset stylings download*/
+
+* {
+    margin : 0;
+    padding : 0;
+    text-decoration: none;
+}
+.body{
+    background-color: #f3f3f3;
+}
+
+.header{
+    background-color: #ffff;
+}
+header .header-brand{
+font-family:'Courier New', Courier, monospace;
+font-size: 28px;
+font-weight: 900;
+color: #111;
+text-transform: uppercase;
+display: block;
+margin: o auto;
+text-align: center;
+padding:20px 0px;
+}
+
+header nav ul{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li{
+    display: inline-block;
+    list-style:none;
+    padding: 0 16px;
+
+}
+header nav ul li a{ 
+    font-family:'Courier New', Courier, monospace;
+font-size: 16px;
+
+color: #111;
+}
+
+header .header-cases{
+    display: none;
+}
+
+
+/*-----INDEX-----*/
+
+
+.wrapper {
+    width : 100%;
+}
+
+.index-banner  {
+   
+    width: 100%;
+    height: calc(100vh -100px);
+    background-image: url('bilder/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.vertical-center{
+    display: table-cell;
+}
+ .index-banner h2{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: 900;
+    color: honeydew;
+    text-align: center;
+    text-shadow:2px 2px 8px #111;
+    line-height: 70px;
+ }
+
+ 
+ .index-banner h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    color: honeydew;
+    text-align: center;
+    text-shadow:2px 2px 8px #111;
+    line-height: 40px;
+ }
+
+.index-boxlink-square , .index-boxlink-rectangle{
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    background-color: #f2f2f2;
+    height: 100px;
+
+}
+
+.index-links h3 {
+    
+    font-family:'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: 300;
+    color: #111;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+
+/**FOOTER*/
+
+
+
+.footer{
+    padding: 40px 40px;
+    width: calc(100%-80px);
+    background-color: #111;
+   margin-top: 20px;
+   overflow: hidden;
+}
+
+footer ul{
+width:fit-content;
+float: left;
+padding-left: 20px;
+}
+
+.footer-information{
+    display: none;
+}
+
+
+    footer ul li{
+    display: block;
+    list-style: none;
+    color:white
+    }
+
+
+    footer ul li a{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 24px;
+        line-height: 30px;
+         }
+       
+
+.footer-icons {
+    color:gray;
+    font-size: 4em;
+    float: inline-end;
+    margin-bottom: 10px;
+}
+
+
+
+.img-info{
+    width: 100%;
+}
+
+.img-info h2{
+    padding:30px 30px 20px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 30px;
+    color: dimgray;
+    line-height: px;
+}
+
+.img-info p{
+    padding: 0px 30px 20px;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 24px;;
+}
+
+ .img-me{
+    width: 100%;
+ }
+
+
+
+
+/**only run the code in the curly brackeds, if the statement is true. if we have a screen with a minimum width of 768px
+----TABLET VIEW!------          */
+
+
+ @media only screen and (min-width: 768px) {
+
+    .wrapper {
+        width : 600px;
+        margin: 0 auto; /*centre the content */
+    }
+
+    .img-info h2{
+        padding:20px 0px 0px;
+    
+    }
+    
+    .img-info p{
+        padding: 20px 0px 0px;
+     
+    }
+
+    .img-me{
+        padding-top: 30px;
+     }
+    
+
+ }
+ @media only screen and (min-width: 1000px) {
+    .wrapper{
+        width: 1000px;
+    }
+
+    .img-info{
+        width:50%;
+        float: right;
+    }
+    .img-info h2{
+        padding:20px 0px 0px 30px;
+    
+    }
+    
+    .img-info p{
+        padding: 20px 0px 0px 30px;
+     
+    }
+    .img-me{
+        padding-top: 100px;
+        width: 50%;
+        float: left;
+     }
+ }
