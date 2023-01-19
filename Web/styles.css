@@ -3,19 +3,19 @@
 /*reset stylings download*/
 
 * {
-    margin : 0;
-    padding : 0;
+    margin :0;
+    padding :0;
     text-decoration: none
 }
 
 .gridbox{
     display:grid;
-    grid-template-columns: 100%
+    grid-template-columns:100%
     
 }
 
 .body{
-    background-color: #f3f3f3
+    background-color:#f3f3f3
 }
 
 /*HEADER_STYLE*/
@@ -31,7 +31,7 @@
 
 .header-brand  img:nth-child(1) {
     width:100px;
-    padding:10px 0px;
+    padding:10px 0px
    } 
    
 /*NAVIGATION_STYLE*/
@@ -66,7 +66,7 @@ header nav ul li a{
 
 
 .welcome{
-    width :100%
+    width:100%
 }
 
 .main{
@@ -139,6 +139,82 @@ header nav ul li a{
     min-width:300px
  }
 
+ /**Modal**/ 
+
+ .modal{
+    position:fixed; 
+    z-index: 10;        /* sits on top of the content*/
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) scale(0);
+    height:80%;
+    overflow:auto;
+    border-radius: 10px;
+    width:500px;
+    max-width:80%;
+    background-color: whitesmoke;
+    transition:200ms ease-out;
+    display: none;
+ }
+
+.modal.active{
+    transform:translate(-50%, -50%);
+    display:block;
+}
+ .modal-header{
+    display:flex;
+    padding: 10px 15px;
+    justify-content:space-between;
+    align-items:center;
+ }
+ .modal-title{
+    font-size:20px;
+    font-weight: bold;
+    color: rgb(5, 56, 53)
+ }
+
+ .modal-content{
+    flex-direction: column;
+    margin:0 auto;
+    padding: 0;
+    width:80%;
+ }
+
+ .modal-content p{
+    margin: 10px;
+ }
+
+ .modal-header .close{
+    outline:none;
+    border:none;
+    background:none;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .close:hover{
+    color: rgb(0, 128, 107);
+    text-decoration:none;
+    cursor:pointer;
+  }
+
+
+#overlay{
+    position:fixed;
+    opacity:0;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    background-color: rgb(0, 0, 0, 0.5) ;
+    pointer-events:none;
+    backdrop-filter:blur(3px);
+}
+
+#overlay.active{
+    opacity:10;
+    pointer-events:all;
+}
 
 /**FOOTER*/
 
@@ -172,7 +248,7 @@ padding-left:20px
         font-family:'Courier New', Courier, monospace;
         font-size:24px;
         line-height:30px
-         }
+    }
        
 
 .footer-icons{
@@ -180,12 +256,6 @@ padding-left:20px
     font-size:4em;
     float:inline-end;
     margin-bottom:10px
-}
-
-
-
-.img-info{
-    width: 100%
 }
 
 .img-info h2{
@@ -203,11 +273,6 @@ padding-left:20px
     line-height:24px
 }
 
-  .img-welcome{
-    width:100%
- } 
-
-
 
 
 /**only run the code in the curly brackeds, if the statement is true. if we have a screen with a minimum width of 768px
@@ -218,7 +283,7 @@ padding-left:20px
 
     .welcome{
         width :600px;
-        margin: 0 auto /*centre the content */
+        margin:0 auto /*centre the content */
     }
 
     
