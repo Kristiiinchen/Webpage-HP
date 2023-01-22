@@ -37,5 +37,37 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+if(overlay){
 overlay.addEventListener("click", closeModal(modal));
+}
+sessionStorage.setItem("key", "value");
+sessionStorage.getItem("key");
 
+
+
+//content generierung
+
+
+        document.addEventListener('DOMContentLoaded',function(){
+          document.getElementById('getContact').onclick= () => {
+            fetch('contact.json')
+            .then(response => response.json()) 
+            .then(data => {
+                appendData(data);
+            })
+            .catch(err =>{
+                console.log('error: ' + err);
+            });
+
+            
+        function appendData(data) {
+            var mainContainer = document.getElementById("message");
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName + ' '+ data[i].email;
+                mainContainer.appendChild(div);
+            }
+          }
+          };
+        });
+        

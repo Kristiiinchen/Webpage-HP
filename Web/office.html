@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Praxisinformation und Preise.">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script  defer src="script.js"></script>
+    <link href="css/all.css" rel="stylesheet">
+  
+
     <title>Praxis</title>
+
+
 </head>
-<body class="gridbox">
+
+
+<body>
     <header class = "header">
       <a href="index.html" class ="header-brand"><img src="bilder/logo_200.png"alt="Firmenlogo"></a>
         
@@ -21,33 +29,57 @@
         </nav>
       </header>
 
-      <main class="office-main">
 
-
+      <main>
         <section class = "index-banner">
           <div class="vertical-center">
             <h2>Heilpraktiker <br> Christian Zich</h2>
             <h1>Praxis</h1>
           </div>
         </section>
-        <div class ="office">
-          <article class="office-information">
-            <h2>
-             Adresse
-           </h2>
-                <p>  
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
-                  tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                  </p>
-                  <p>
-                    Maxmusterstraße 4. 66482 Zweibrücken
-                  </p>
-              </article>
-       
+        
+        <div class="office_information">
         <section>
-          
-        </section>
+          <article class="office_adress">
+            <h2>Adresse</h2>
+            <p>Praxis für Naturheilkunde - Christian Zich</p>
+            <p>Maxmusterstraße 4.</p>
+            <p>66482 Zweibrücken</p>
+          </article>
 
+          <article>
+            <h2>Öffnungszeiten</h2>
+            <div class="opening">
+            <p>Montag bis Mitwoch</p>
+            <time>8:00 - 15:00 Uhr</time>
+            <p >Donnerstag und Freitag</p>
+            <time>8:00 - 12:00 Uhr <br> und <br>15:00 - 18:00 Uhr</time>
+            </div>
+          </article>
+       </section>
+      </div>
+
+       <section class="office_container">
+        <h2>Kontakt</h2>
+        <p id="message"></p>
+
+        <button id="getContact">Kontakt</button>
+       </section>
       </main>
+
+      <footer class="footer">
+        <ul>
+          <li> <a href="#"></a>Impressum</li>
+          <li> <a href="#"></a>Datenschutz</li>
+
+        </ul>
+  
+        <div class = "footer-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+  </footer>
+
 </body>
+
 </html>
